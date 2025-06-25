@@ -96,7 +96,7 @@ const BoardDetail = () => {
             {/* 1. 프로젝트 내부에 저장하여 웹루트로 접근 */}
             {/* 2. aws같은 사이트를 이용해 공개주소로 접근 */}
             <Form.Group className='mb-3'>
-              <img src={`${IMG_PATH}${board.imgPath}`}></img>
+              <img src={`${board.imgPath}`}></img>
             </Form.Group>
 
             {/* 게시물 데이터 확인 */}
