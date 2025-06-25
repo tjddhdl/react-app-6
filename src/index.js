@@ -10,8 +10,12 @@ import { login } from './store/memberSlice';
 // context: 여러 컴포넌트에서 값을 공유할 때 사용
 // store, slice: 여러 컴포넌트에서 상태(state)를 공유할 때 사용
 export const Context = createContext()
-// const host = 'http://localhost:8080'
-const host = 'http://54.180.86.144'
+let host = null;
+if(window.location.hostname=="localhost"){
+  host = 'http://localhost:8080'
+}else{
+  host = 'http://54.180.86.144'
+}
 console.log(window.location.hostname)
 // 화면이 새로고침이 되었을때 로그인 상태 유지하기
 
